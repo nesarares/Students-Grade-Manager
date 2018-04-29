@@ -1,0 +1,7 @@
+5321;Roman Ariadna;225;rair2912@scs.ubbcluj.ro;Mircea Gabriel;rair2912
+1242;Nesa Rares;225;nrir2158@scs.ubbcluj.ro;Bufnea Darius;student
+9786;Michael Joshua;912;mjie2932@scs.ubbcluj.ro;Dragos Radu;mjie2932
+8651;Patriche Alexandru-Daniel;914;pajr2334@scs.fspacj.ro;Serban Camelia;pajr2334
+652;Pop Diana-Alexandra;225;pdir2174@scs.ubbcluj.ro;Bota Florentin;pdir2174
+3215;Mihali George;225;mgir2146@scs.ubbcluj.ro;Mircea Gabriel;mgir2146
+351;Szatmari Sergiu-Ludovic;225;ssir2198@scs.ubbcluj.ro;Grebla Horea;ssir2198

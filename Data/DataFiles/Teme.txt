@@ -1,0 +1,7 @@
+32;MAP - Lab 4;7
+212;MAP - Lab 1 + Sem 1;3
+453;MAP - Lab 3;6
+53;MAP - Lab 2;4
+123;MAP - Lab 5;8
+321;MAP - Lab 6;9
+231;MAP - Lab 8;11

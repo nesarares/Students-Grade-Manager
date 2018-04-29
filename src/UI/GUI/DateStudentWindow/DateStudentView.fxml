@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="760.0" prefWidth="1150.0" stylesheets="@../stylesheet.css" xmlns="http://javafx.com/javafx/9.0.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UI.GUI.DateStudentWindow.DateStudentController">
+   <children>
+      <StackPane prefHeight="150.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Label id="Header" fx:id="labelTitle" text="Date personale: &lt;Student&gt;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                  <GridPane hgap="40.0" layoutY="100.0" prefHeight="660.0" prefWidth="1150.0" vgap="20.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="100.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="770.0" minWidth="10.0" percentWidth="65.0" prefWidth="0.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="570.0" minWidth="10.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" spacing="35.0" GridPane.columnIndex="1">
+                           <children>
+                              <Label text="Statistici">
+                                 <font>
+                                    <Font name="Roboto Condensed Bold" size="27.0" />
+                                 </font>
+                              </Label>
+                              <Separator prefWidth="200.0">
+                                 <VBox.margin>
+                                    <Insets top="-24.0" />
+                                 </VBox.margin>
+                              </Separator>
+                              <Label alignment="CENTER" contentDisplay="RIGHT" prefHeight="29.0" prefWidth="667.0" text="Medie: ">
+                                 <font>
+                                    <Font name="Roboto Condensed Bold" size="20.0" />
+                                 </font>
+                                 <graphic>
+                                    <Label fx:id="labelMedie" text="&lt;medie&gt;">
+                                       <font>
+                                          <Font name="Open Sans" size="20.0" />
+                                       </font>
+                                    </Label>
+                                 </graphic>
+                              </Label>
+                              <Label alignment="CENTER" contentDisplay="RIGHT" prefHeight="29.0" prefWidth="704.0" text="Media grupei: ">
+                                 <font>
+                                    <Font name="Roboto Condensed Bold" size="20.0" />
+                                 </font>
+                                 <graphic>
+                                    <Label fx:id="labelMedieGrupa" text="&lt;medie&gt;">
+                                       <font>
+                                          <Font name="Open Sans" size="20.0" />
+                                       </font>
+                                    </Label>
+                                 </graphic>
+                              </Label>
+                              <PieChart fx:id="chartNote" title="Note" />
+                           </children>
+                           <padding>
+                              <Insets top="5.0" />
+                           </padding>
+                        </VBox>
+                        <TableView id="NormalTable" fx:id="table" prefHeight="596.0" prefWidth="661.0" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS">
+                          <columns>
+                            <TableColumn fx:id="columnTema" prefWidth="313.0" text="Tema" />
+                            <TableColumn fx:id="columnNota" minWidth="0.0" prefWidth="88.0" text="Nota" />
+                              <TableColumn fx:id="columnSaptamana" prefWidth="152.0" text="Saptamana Predarii" />
+                              <TableColumn fx:id="columnDeadline" prefWidth="107.0" text="Deadline" />
+                          </columns>
+                           <styleClass>
+                              <String fx:value="table-view" />
+                              <String fx:value="tabel-fara-butoane" />
+                           </styleClass>
+                        </TableView>
+                     </children>
+                     <padding>
+                        <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+                     </padding>
+                  </GridPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>

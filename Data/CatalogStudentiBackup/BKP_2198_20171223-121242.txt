@@ -1,0 +1,3 @@
+Adaugare nota, 231, 8, 11, 11, -
+Adaugare nota, 212, 1, 3, 11, Nota a fost depunctata deoarece a depasit deadline-ul. 
+Adaugare nota, 53, 1, 4, 11, Nota a fost depunctata deoarece a depasit deadline-ul. -

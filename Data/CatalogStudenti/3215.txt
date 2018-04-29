@@ -1,0 +1,3 @@
+Adaugare nota, 231, 9, 11, 11, Interfata nu e foarte user-friendly la adaugarea notelor
+Adaugare nota, 321, 10, 9, 9, -
+Modificare nota, 231, 10, 11, 11, Mai bine acum!

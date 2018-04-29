@@ -1,0 +1,8 @@
+Adaugare nota, 32, 10, 7, 3, -
+Adaugare nota, 212, 10, 3, 3, -
+Adaugare nota, 53, 9, 4, 4, -
+Adaugare nota, 453, 7, 6, 7, Nota a fost depunctata deoarece a depasit deadline-ul. 
+Adaugare nota, 32, 10, 7, 7, -
+Adaugare nota, 231, 10, 11, 11, Gud work
+Adaugare nota, 4543, 8.75, 14, 13, Foarte ok.
+Modificare nota, 4543, 9.0, 14, 13, Mult mai bine

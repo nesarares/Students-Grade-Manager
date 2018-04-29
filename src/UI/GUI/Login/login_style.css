@@ -1,0 +1,64 @@
+.jfx-button {
+    -fx-font-size: 20px;
+    -fx-background-color: rgba(0, 0, 0, 0.06);
+    -fx-background-radius: 30px;
+    -fx-font-family: 'Roboto Light';
+    -fx-padding: 10px;
+}
+
+.jfx-button:hover {
+    -fx-background-color: rgba(255,255,255,0.1);
+}
+
+.root {
+    background-dark: #333333;
+    background-dark-hover: #2f2f2f;
+    background-dark-pressed: #282828;
+    background-focused: #cb483b;
+
+    -fx-accent: #cb483b;
+    -fx-focus-color: #cb483b;
+    -fx-faint-focus-color: transparent;
+
+    /*-fx-background-color: #333333;*/
+    -fx-background-image: url("../../../Resources/bg_login.jpeg");
+    -fx-background-size: cover;
+}
+
+.text-input, .text-input:focused {
+    -fx-prompt-text-fill:darkgray;
+}
+
+.jfx-rippler {
+    -jfx-rippler-fill: -fx-accent;
+}
+
+#mainPane {
+    -fx-background-color: background-dark;
+}
+
+.jfx-text-field, .jfx-password-field {
+    -jfx-focus-color: -fx-accent;
+    -jfx-label-float: true;
+}
+
+.jfx-text-field .text {
+    -fx-font-size: 14px;
+}
+
+.jfx-text-field .glyph-icon {
+    -glyph-size: 15px;
+}
+
+#CloseButton {
+    -fx-background-color: transparent;
+    -fx-padding: 5px;
+}
+
+#CloseButton:hover .glyph-icon {
+    -fx-fill: #c7c7c7;
+}
+
+#CloseButton:pressed .glyph-icon {
+    -fx-fill: #a5a5a5;
+}

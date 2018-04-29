@@ -1,0 +1,2 @@
+Adaugare nota, 5, 3, 3, 5, Nota a fost depunctata deoarece a depasit deadline-ul.
+Modificare nota, 5, 4, 3, 5, Nota a fost depunctata deoarece a depasit deadline-ul. 

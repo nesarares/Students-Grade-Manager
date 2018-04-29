@@ -1,0 +1,4 @@
+Adaugare nota, 1, 8, 9, 6, Functionalitatea 3 nu respecta cerintele.
+Adaugare nota, 3, 7, 7, 6, Functionalitati incomplete (3,2).
+Modificare nota, 1, 9, 9, 6, -
+Modificare nota, 3, 10, 7, 7, -

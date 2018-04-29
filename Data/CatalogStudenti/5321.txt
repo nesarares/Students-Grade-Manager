@@ -1,0 +1,5 @@
+Adaugare nota, 212, 9, 3, 3, Atentie la obiectele serializabile.
+Adaugare nota, 53, 10, 4, 4, -
+Adaugare nota, 453, 8, 6, 6, Inca n-ai facut bine cu serializable
+Modificare nota, 453, 9, 6, 6, Asa e mai bine!
+Adaugare nota, 231, 10, 11, 11, -

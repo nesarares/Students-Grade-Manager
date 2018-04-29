@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="RootAnchorPane" fx:id="rootPane" minHeight="800.0" minWidth="1024.0" prefHeight="800.0" prefWidth="1280.0" stylesheets="@main_style.css" xmlns="http://javafx.com/javafx/9.0.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UI.GUI.Main.MainController">
+   <children>
+      <StackPane fx:id="stackPaneContent" prefHeight="150.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <BorderPane prefHeight="760.0" prefWidth="1280.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="40.0">
+                     <left>
+                      <AnchorPane id="menuPane" minHeight="0.0" minWidth="0.0" prefHeight="774.0" prefWidth="130.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <VBox id="menuPane" fx:id="menuPane" prefHeight="370.0" prefWidth="110.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <Button fx:id="buttonStudenti" contentDisplay="TOP" graphicTextGap="10.0" mnemonicParsing="false" onAction="#handleButtonStudenti" prefHeight="100.0" prefWidth="133.0" text="STUDENTI" textAlignment="CENTER">
+                                       <graphic>
+                                          <FontAwesomeIconView fill="WHITE" glyphName="GRADUATION_CAP" size="35" />
+                                       </graphic>
+                                       <font>
+                                          <Font name="Roboto Condensed Bold" size="14.0" />
+                                       </font>
+                                    </Button>
+                                    <Button fx:id="buttonTeme" contentDisplay="TOP" graphicTextGap="10.0" mnemonicParsing="false" onAction="#handleButtonTeme" prefHeight="100.0" prefWidth="133.0" text="TEME" textAlignment="CENTER">
+                                       <graphic>
+                                          <FontAwesomeIconView fill="WHITE" glyphName="BOOK" selectionStart="0" size="35" />
+                                       </graphic>
+                                       <font>
+                                          <Font name="Roboto Condensed Bold" size="14.0" />
+                                       </font>
+                                    </Button>
+                                    <Button fx:id="buttonNote" contentDisplay="TOP" graphicTextGap="10.0" mnemonicParsing="false" onAction="#handleButtonNote" prefHeight="100.0" prefWidth="139.0" text="NOTE" textAlignment="CENTER">
+                                       <font>
+                                          <Font name="Roboto Condensed Bold" size="14.0" />
+                                       </font>
+                                       <graphic>
+                                          <FontAwesomeIconView fill="WHITE" glyphName="EDIT" size="35" />
+                                       </graphic>
+                                    </Button>
+                                    <Button fx:id="buttonDate" contentDisplay="TOP" graphicTextGap="8.0" mnemonicParsing="false" onAction="#handleButtonDate" prefHeight="100.0" prefWidth="139.0" text="DATE &#10;PERSONALE" textAlignment="CENTER">
+                                       <font>
+                                          <Font name="Roboto Condensed Bold" size="14.0" />
+                                       </font>
+                                       <graphic>
+                                          <FontAwesomeIconView fill="WHITE" glyphName="USER_CIRCLE" size="32" />
+                                       </graphic>
+                                    </Button>
+                                    <Button fx:id="buttonRapoarte" contentDisplay="TOP" graphicTextGap="8.0" mnemonicParsing="false" onAction="#handleButtonRapoarte" prefHeight="100.0" prefWidth="139.0" text="RAPOARTE" textAlignment="CENTER">
+                                       <font>
+                                          <Font name="Roboto Condensed Bold" size="14.0" />
+                                       </font>
+                                       <graphic>
+                                          <FontAwesomeIconView fill="WHITE" glyphName="BAR_CHART" size="32" />
+                                       </graphic>
+                                    </Button>
+                                    <Button fx:id="buttonUtilizatori" contentDisplay="TOP" graphicTextGap="8.0" mnemonicParsing="false" onAction="#handleButtonUtilizatori" prefHeight="100.0" prefWidth="139.0" text="UTILIZATORI" textAlignment="CENTER">
+                                       <font>
+                                          <Font name="Roboto Condensed Bold" size="14.0" />
+                                       </font>
+                                       <graphic>
+                                          <FontAwesomeIconView fill="WHITE" glyphName="USERS" size="32" />
+                                       </graphic>
+                                    </Button>
+                                    <Button fx:id="buttonSetari" contentDisplay="TOP" graphicTextGap="8.0" mnemonicParsing="false" onAction="#handleButtonSetari" prefHeight="100.0" prefWidth="139.0" text="SETARI CONT" textAlignment="CENTER">
+                                       <font>
+                                          <Font name="Roboto Condensed Bold" size="14.0" />
+                                       </font>
+                                       <graphic>
+                                          <FontAwesomeIconView fill="WHITE" glyphName="COG" size="32" />
+                                       </graphic>
+                                    </Button>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                     </left>
+                     <center>
+                      <AnchorPane id="CenterPane" fx:id="contentPane" minHeight="0.0" minWidth="0.0" prefHeight="758.0" prefWidth="1150.0" style="-fx-background-color: background-dark;" BorderPane.alignment="CENTER" />
+                     </center>
+                  </BorderPane>
+                  <MenuBar prefHeight="36.0" prefWidth="1280.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <menus>
+                      <Menu mnemonicParsing="false" text="File">
+                        <items>
+                              <MenuItem mnemonicParsing="false" onAction="#handleSignOut" text="Sign Out" />
+                          <MenuItem mnemonicParsing="false" onAction="#handleMenuClose" text="Close" />
+                        </items>
+                      </Menu>
+                        <Menu mnemonicParsing="false" text="View">
+                          <items>
+                            <MenuItem fx:id="ButtonFullScreen" mnemonicParsing="false" onAction="#handleMenuFullScreen" text="Full Screen" />
+                          </items>
+                        </Menu>
+                      <Menu mnemonicParsing="false" text="Help">
+                        <items>
+                          <MenuItem mnemonicParsing="false" onAction="#handleMenuAbout" text="About" />
+                        </items>
+                      </Menu>
+                    </menus>
+                  </MenuBar>
+               </children>
+            </AnchorPane>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+
+<AnchorPane prefHeight="486.0" prefWidth="800.0" stylesheets="@../stylesheet.css" xmlns="http://javafx.com/javafx/9.0.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UI.GUI.NoteMainWindow.NoteAddWindowController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITESMOKE" height="486.0" stroke="BLACK" strokeType="INSIDE" width="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Label id="Header" layoutX="67.0" layoutY="14.0" text="Adaugare nota" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Button id="CloseButton" layoutX="771.0" layoutY="-2.0" mnemonicParsing="false" onAction="#handleButtonClose" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+         <graphic>
+            <MaterialDesignIconView fill="WHITE" glyphName="CLOSE" size="20" />
+         </graphic>
+      </Button>
+      <HBox alignment="CENTER_RIGHT" layoutX="-5.0" layoutY="444.0" prefWidth="800.0" spacing="20.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <JFXButton onAction="#handleButtonAdd" text="Adaugare" />
+            <JFXButton onAction="#handleButtonClose" text="Anulare" />
+         </children>
+         <padding>
+            <Insets bottom="20.0" right="20.0" />
+         </padding>
+      </HBox>
+      <GridPane hgap="20.0" layoutY="98.0" prefHeight="324.0" prefWidth="800.0" AnchorPane.bottomAnchor="64.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="98.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="BOTTOM" vgrow="ALWAYS" />
+        </rowConstraints>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+         <children>
+            <JFXTextField fx:id="searchBarStudent" promptText="Nume student">
+               <GridPane.margin>
+                  <Insets bottom="5.0" />
+               </GridPane.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="searchBarTema" promptText="Descriere tema" GridPane.columnIndex="1">
+               <GridPane.margin>
+                  <Insets bottom="5.0" />
+               </GridPane.margin>
+            </JFXTextField>
+            <ListView fx:id="listViewStudenti" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1" />
+            <ListView fx:id="listViewTema" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="20.0" GridPane.columnIndex="2" GridPane.rowSpan="2147483647">
+               <children>
+                  <JFXTextField fx:id="fieldNota" promptText="Nota" />
+                  <Group>
+                     <children>
+                        <JFXDatePicker fx:id="fieldSaptamana" editable="false" prefHeight="30.0" prefWidth="241.0" promptText="Data predarii" />
+                        <JFXTextField fx:id="fakeFieldSaptamana" editable="false" focusColor="#405aa800" mouseTransparent="true" prefHeight="30.0" prefWidth="241.0" unFocusColor="#4d4d4d00" />
+                     </children>
+                  </Group>
+                  <TextArea fx:id="textAreaObservatii" prefHeight="200.0" prefWidth="200.0" promptText="Observatii" wrapText="true" />
+               </children>
+            </VBox>
+            <JFXTextField fx:id="fakeFieldStudent" alignment="BOTTOM_CENTER" editable="false" focusColor="#405aa800" mouseTransparent="true" prefWidth="240.0" unFocusColor="#4d4d4d00" GridPane.rowIndex="1" />
+            <JFXTextField fx:id="fakeFieldTema" editable="false" focusColor="#405aa800" mouseTransparent="true" unFocusColor="#4d4d4d00" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

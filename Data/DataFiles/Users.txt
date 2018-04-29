@@ -1,0 +1,10 @@
+pajr2334;sha1:64000:18:iiGIOpdjCz++KfUyHMmrovL9U5brntUM:WtiZ9atKfuYo7vS/+8ddupST;student
+pdir2174;sha1:64000:18:am42W7EJIKqunWKAOeeYqFs6G9klTTE+:ZalIHzTXTbqTDiburFr/7Nvu;student
+student;sha1:64000:18:cqOCKeZ/06bYmMAg/sX15vqY6chNkJdL:xUsPA1ETHev0A8HK0jcDJZMw;student
+profesor2;sha1:64000:18:Ks0HuT8o7KW9cd5QVUN5zrk60z0BwLEM:hbnpYOxzUE7n+XMeNR0voQ98;profesor
+mjie2932;sha1:64000:18:0Hl2ou6xEO9QxqVttUDksEMycx7BHrOr:U2iy1V7/XPH3QonWH72SbcZz;student
+mgir2146;sha1:64000:18:5GMtBTTkxX3N+Wj7XmqJDNCry7Q+GITQ:ta03nMT+d0Unz1NH/nuG71Sn;student
+admin;sha1:64000:18:HTDWPHH2K9C9bK8iSCRT1RQpb4p7xliI:vuUjfwCJ7RJY+oIB8jluE0eu;admin
+ssir2198;sha1:64000:18:a3cozC+Rga9i3GR/nMTU0ygjg/Q19fU6:3WHowfgug3IWA4rn5sbfuYm5;student
+profesor;sha1:64000:18:OldAL+CUa33j1hwz5FEHHRr3JRdhOPA5:cwbv43ArgeOlAqDN3qWrQ+MY;profesor
+rair2912;sha1:64000:18:HknzjOGeuSYTYg51H0IeRa2AS+yvNxmC:YV/FQfdTENl70GywzcWh4vay;student

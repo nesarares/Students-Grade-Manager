@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="mainPane" prefHeight="452.0" prefWidth="391.0" stylesheets="@login_style.css" xmlns="http://javafx.com/javafx/9.0.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UI.GUI.Login.LoginController">
+   <children>
+      <StackPane fx:id="stackPaneContent" prefHeight="548.0" prefWidth="391.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <FontAwesomeIconView fill="WHITE" glyphName="LOCK" layoutX="170.0" layoutY="108.0" size="80" />
+                  <JFXTextField fx:id="fieldUser" layoutX="50.0" layoutY="163.0" onAction="#handleLogin" prefHeight="25.0" prefWidth="338.0" promptText="Utilizator" unFocusColor="#6e6c6c" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0">
+                     <font>
+                        <Font name="Roboto" size="16.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXPasswordField fx:id="fieldPassword" layoutX="50.0" layoutY="237.0" onAction="#handleLogin" promptText="Parola" unFocusColor="#6e6c6c" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0">
+                     <font>
+                        <Font name="Roboto" size="16.0" />
+                     </font>
+                  </JFXPasswordField>
+                  <!--<Button id="CloseButton" layoutX="338.0" layoutY="13.0" mnemonicParsing="false" onAction="#closeWindow" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="15.0">-->
+                     <!--<graphic>-->
+                        <!--<MaterialDesignIconView fill="WHITE" glyphName="CLOSE" size="20" />-->
+                     <!--</graphic>-->
+                  <!--</Button>-->
+                  <JFXButton layoutX="135.0" layoutY="327.0" onAction="#handleLogin" text="Login" textFill="WHITE" AnchorPane.leftAnchor="135.0" AnchorPane.rightAnchor="135.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXTextField fx:id="fakeErrorField" editable="false" focusColor="#34478000" layoutX="50.0" layoutY="371.0" mouseTransparent="true" prefHeight="25.0" prefWidth="291.0" unFocusColor="#4d4d4d00" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" />
+               </children>
+            </AnchorPane>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>

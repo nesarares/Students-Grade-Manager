@@ -1,0 +1,8 @@
+Adaugare nota, 212, 9, 3, 3, -
+Adaugare nota, 53, 10, 4, 4, -
+Adaugare nota, 453, 10, 6, 6, Meniu fain
+Adaugare nota, 32, 8, 7, 7, -
+Adaugare nota, 123, 1, 8, 11, Nota a fost depunctata deoarece a depasit deadline-ul. 
+Adaugare nota, 231, 7, 11, 12, Nota a fost depunctata deoarece a depasit deadline-ul. -
+Adaugare nota, 4543, 8.56, 14, 12, -
+Modificare nota, 4543, 9.55, 14, 12, -

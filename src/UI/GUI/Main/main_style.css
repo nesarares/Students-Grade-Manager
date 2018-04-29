@@ -1,0 +1,161 @@
+.scroll-pane,
+.split-pane {
+    -fx-background-color: transparent, transparent;
+}
+
+
+.root {
+    background-dark: #333333;
+    background-dark-hover: #2f2f2f;
+    background-dark-pressed: #282828;
+    background-focused: #cb483b;
+
+    -fx-accent: #cb483b;
+    -fx-focus-color: #cb483b;
+
+    -fx-faint-focus-color: transparent;
+
+    -fx-background-color: #333333;
+}
+
+.menu-bar {
+    -fx-font-size: 13px;
+    -fx-alignment: center-left;
+}
+
+#menuPane {
+    -fx-background-color: background-dark;
+}
+
+#menuPane > .button {
+    -fx-background-color: background-dark;
+    -fx-background-radius: 0;
+    -fx-text-fill: white;
+    -fx-border-color: gray;
+    -fx-border-width: 0 0 1px 0;
+}
+
+#menuPane > .button:hover {
+    -fx-background-color: background-dark-hover;
+}
+
+#menuPane > .button:pressed {
+    -fx-background-color: background-dark-pressed;
+}
+
+#menuPane > .button:disabled, #menuPane > .jfx-button:disabled {
+    -fx-background-color: background-focused;
+    -fx-text-fill: white;
+    -fx-opacity: 1.0;
+}
+
+#menuPane > .button:disabled > * {
+    -fx-opacity: 1.0;
+}
+
+#CenterPane,
+#CenterPane:selected,
+#CenterPane:focused,
+#CenterPane:armed {
+    -fx-background-color: background-dark;
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+}
+
+/*              MENUBAR STYLING               */
+
+* {
+    -fx-my-menu-color: background-dark;
+    -fx-my-menu-color-highlighted: background-focused;
+    -fx-my-menu-font-color: white;
+    -fx-my-menu-font-color-highlighted: white;
+}
+
+/* MENU BAR + Top-level MENU BUTTONS */
+/*** The menu bar itself ***/
+.menu-bar {
+    -fx-background-color: -fx-my-menu-color;
+    -fx-border-width: 0 0 1px 0;
+    -fx-border-color: gray;
+}
+
+/*** Top-level menu itself (not selected / hovered) ***/
+.menu-bar > .container > .menu-button {
+    -fx-background-color: -fx-my-menu-color;
+    -fx-padding: 10px 15px;
+}
+
+/*** Top-level menu's label (not selected / hovered) ***/
+.menu-bar > .container > .menu-button > .label {
+    -fx-text-fill: -fx-my-menu-font-color;
+}
+
+/*** Top-level menu's label (disabled) ***/
+.menu-bar > .container > .menu-button > .label:disabled {
+    -fx-opacity: 1.0;
+}
+
+/*** Top-level menu itself (selected / hovered) ***/
+.menu-bar > .container > .menu-button:hover,
+.menu-bar > .container > .menu-button:focused,
+.menu-bar > .container > .menu-button:showing {
+    -fx-background-color: -fx-my-menu-color-highlighted;
+}
+
+/*** Top-level menu's label (selected / hovered) ***/
+.menu-bar > .container > .menu-button:hover > .label,
+.menu-bar > .container > .menu-button:focused > .label,
+.menu-bar > .container > .menu-button:showing > .label {
+    -fx-text-fill: -fx-my-menu-font-color-highlighted;
+}
+
+/* MENU ITEM (children of a MENU BUTTON) */
+/*** The item itself (not hovered / focused) ***/
+.menu-item {
+    -fx-background-color: -fx-my-menu-color;
+}
+
+/*** The item's label (not hovered / focused) ***/
+.menu-item .label {
+    -fx-text-fill: -fx-my-menu-font-color;
+}
+
+/*** The item's label (disabled) ***/
+.menu-item .label:disabled {
+    -fx-opacity: 1.0;
+}
+
+/*** The item itself (hovered / focused) ***/
+.menu-item:focused, .menu-item:hover {
+    -fx-background-color: -fx-my-menu-color-highlighted;
+}
+
+/*** The item's label (hovered / focused) ***/
+.menu-item:focused .label, .menu-item:hover .label {
+    -fx-text-fill: -fx-my-menu-font-color-highlighted;
+}
+
+/* CONTEXT MENU */
+/*** The context menu that contains a menu's menu items ***/
+.context-menu {
+    -fx-background-color: -fx-my-menu-color;
+}
+
+#CloseButton {
+    -fx-background-color: transparent;
+    -fx-background-radius: 0;
+    -fx-min-height: 40px;
+    -fx-padding: 5px 15px;
+}
+
+#CloseButton:hover {
+    -fx-background-color: rgba(255,255,255,0.03);
+}
+
+#CloseButton:hover .glyph-icon {
+    -fx-fill: #c7c7c7;
+}
+
+#CloseButton:pressed .glyph-icon {
+    -fx-fill: #a5a5a5;
+}
