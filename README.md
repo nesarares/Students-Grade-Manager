@@ -1,6 +1,6 @@
-> This is a repository for a university project at "Advanced programming methods"
-
 # Manager de studenti
+
+University project - Advanced programming methods
 
 ### Tags
 - **Security** : 3 tipuri de utilizatori (admin, profesor, student) cu drepturi diferite in aplicatie. Adminul poate adauga studenti si utilizatori, cat si reseta parole. Profesorul poate adauga teme, poate da note si poate genera rapoarte despre notele studentilor, iar studentii pot vedea detalii despre propriile note. Toti utilizatori isi pot modifica parola asociata contului. Utilizatorii sunt stocati prin username si parola prin hash cu salt.
